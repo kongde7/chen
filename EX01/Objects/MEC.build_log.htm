@@ -1,0 +1,134 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: C Windows, HP Inc., LIC=Q7GU5-G91YC-NTD3G-VXAC9-DIAFN-V95AP
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.21a
+Toolchain Path:  G:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DCM.DLL V1.13.8.0
+Target DLL:      UL2CM3.DLL V1.158.5.0
+Dialog DLL:      TCM.DLL V1.14.14.0
+ 
+<h2>Project:</h2>
+G:\1\EX01\MEC.uvprojx
+Project File Date:  04/10/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'G:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling More.c...
+source\More.c(97): warning:  #223-D: function "Always" declared implicitly
+  			Always(); //���Ե����Ͷ���
+source\More.c(144): warning:  #223-D: function "Time" declared implicitly
+  				Time(0);
+source\More.c(156): warning:  #223-D: function "Night" declared implicitly
+  				ON = Night(ON);
+source\More.c(158): warning:  #223-D: function "Always" declared implicitly
+  				Always(); //���Ե����Ͷ���
+source\More.c(165): warning:  #223-D: function "Always" declared implicitly
+  						Always(); //���Ե����Ͷ���
+source\More.c(169): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  						LCD_DisplayString2(88,32,real_alarm_1);		//��ʾ���ӵ�ʱ��
+source\More.c(170): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  						LCD_DisplayString2(88,256,Clk_On_Off_1);		//��ʾ���ӵĿ���
+source\More.c(220): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  										LCD_DisplayString2(88,256,Clk_On_Off_1);		//��ʾ����״̬
+source\More.c(227): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  				LCD_DisplayString2(88,32,real_alarm_1);//��ʾ����ʱ��
+source\More.c(233): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  				LCD_DisplayString2(88,32,real_alarm_1);//��ʾ����ʱ��
+source\More.c(239): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  				LCD_DisplayString2(88,32,real_alarm_1);//��ʾ����ʱ��
+source\More.c(251): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  										LCD_DisplayString2(88,256,Clk_On_Off_1);		//��ʾ����״̬	
+source\More.c(258): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  				LCD_DisplayString2(88,32,real_alarm_1);//��ʾ����ʱ��
+source\More.c(264): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  				LCD_DisplayString2(88,32,real_alarm_1);//��ʾ����ʱ��
+source\More.c(270): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  				LCD_DisplayString2(88,32,real_alarm_1);//��ʾ����ʱ��
+source\More.c(331): warning:  #223-D: function "E2PROM_WriteSeq" declared implicitly
+  							if(key.KeyValue==
+EY_VALUE_ENTER&&key.Pressed) {state=4;E2PROM_WriteSeq(0x10,a,8);break;}
+source\More.c(341): warning:  #111-D: statement is unreachable
+  			break;
+source\More.c(342): warning:  #111-D: statement is unreachable
+  			return;	
+source\More.c(352): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  						LCD_DisplayString2(88,32,real_alarm_2);		//��ʾ���ӵ�ʱ��
+source\More.c(353): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  						LCD_DisplayString2(88,256,Clk_On_Off_1);		//��ʾ���ӵĿ���
+source\More.c(403): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  										LCD_DisplayString2(88,256,Clk_On_Off_1);		//��ʾ����״̬
+source\More.c(410): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  				LCD_DisplayString2(88,32,real_alarm_2);//��ʾ����ʱ��
+source\More.c(416): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  				LCD_DisplayString2(88,32,real_alarm_2);//��ʾ����ʱ��
+source\More.c(422): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  				LCD_DisplayString2(88,32,real_alarm_2);//��ʾ����ʱ��
+source\More.c(434): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  										LCD_DisplayString2(88,256,Clk_On_Off_1);		//��ʾ����״̬	
+source\More.c(441): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  				LCD_DisplayString2(88,32,real_alarm_2);//��ʾ����ʱ��
+source\More.c(447): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  				LCD_DisplayString2(88,32,real_alarm_2);//��ʾ����ʱ��
+source\More.c(453): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  				LCD_DisplayString2(88,32,real_alarm_2);//��ʾ����ʱ��
+source\More.c(514): warning:  #223-D: function "E2PROM_WriteSeq" declared implicitly
+  							if(key.KeyValue==
+EY_VALUE_ENTER&&key.Pressed) {state=4;E2PROM_WriteSeq(0x10,b,8);break;}
+source\More.c(519): warning:  #111-D: statement is unreachable
+  					break;
+source\More.c(520): warning:  #111-D: statement is unreachable
+  					return;
+source\More.c(524): warning:  #223-D: function "Factory" declared implicitly
+  				Factory();
+source\More.c(85): warning:  #177-D: variable "i" was declared but never referenced
+  	int i=0;
+source\More.c(86): warning:  #177-D: variable "j" was declared but never referenced
+    int j=0;
+source\More.c(14): warning:  #550-D: variable "state" was set but never used
+  static int state=1;  //�����ʼ״̬Ϊ1
+source\More.c(32): warning:  #177-D: variable "alarm_on_off" was declared but never referenced
+  static int alarm_on_off=0;  //��ʼ���Ӵ��ڹر�״̬
+source\More.c: 36 warnings, 0 errors
+linking...
+Program Size: Code=13764 RO-data=6332 RW-data=196 ZI-data=676  
+".\Objects\MEC.axf" - 0 Error(s), 36 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+   * Component: DSP Version: 1.4.6
+
+<h2>Collection of Component include folders:</h2>
+  G:\1\EX01\RTE
+  G:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  G:\Keil_v5\ARM\PACK\Keil\LPC1700_DFP\2.6.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: ARM::CMSIS:DSP:1.4.6
+      Library file:  CMSIS\Lib\ARM\arm_cortexM3l_math.lib
+      Include file:  CMSIS\Include\arm_math.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
