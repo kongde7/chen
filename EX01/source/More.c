@@ -87,77 +87,9 @@ void More( uint8_t value )
 	KEY_TypeDef key; //定义五向按键结构体
 	switch( value )
 	{
-		case 0:
-		{
-			XL = 0;
-			DOCK = "More";
-			LOCATION = "More";
-			
-			LCD_ClearScreen( BackColor ); //清屏
-			Always(); //常显底栏和顶栏
-			break;
-		}
-		case KEY_VALUE_UP:
-		{
-			if( strcmp(LOCATION,"More")==0 )
-			{
-				LOCATION = "mode4";
-			}
-			else if( strcmp(LOCATION,"mode4")==0 )
-			{
-				LOCATION = "mode3";
-			}
-			else if( strcmp(LOCATION,"mode3")==0 )
-			{
-				LOCATION = "mode2";
-			}
-			else if( strcmp(LOCATION,"mode2")==0 )
-			{
-				LOCATION = "mode1";
-			}
-			break;
-		}
-		case KEY_VALUE_DOWN:
-		{
-			if( strcmp(LOCATION,"mode1")==0 )
-			{
-				LOCATION = "mode2";
-			}
-			else if( strcmp(LOCATION,"mode2")==0 )
-			{
-				LOCATION = "mode3";
-			}
-			else if( strcmp(LOCATION,"mode3")==0 )
-			{
-				LOCATION = "mode4";
-			}
-			else if( strcmp(LOCATION,"mode4")==0 )
-			{
-				LOCATION = "More";
-			}
-			break;
-		}
-		case KEY_VALUE_LEFT:
-		{
-			if( strcmp(LOCATION,"More")==0 )
-			{
-				Time(0);
-				return;
-			}
-		}
-		case KEY_VALUE_RIGHT:
-		{
-			break;
-		}
 		case KEY_VALUE_ENTER:
 		{
-			if( strcmp(LOCATION,"mode1")==0 )
-			{
-				ON = Night(ON);
-				LCD_ClearScreen( BackColor ); //清屏
-				Always(); //常显底栏和顶栏
-			}
-			else if( strcmp(LOCATION,"mode2")==0 )
+			if( strcmp(LOCATION,"mode2")==0 )
 			{
 				while(1)			 
 					{ 
